@@ -7,6 +7,7 @@ const events = [
 
 {
 title:"ارتش عراق از مرز عبور کرد",
+map:"map1.png",
 text:"نیروهای عراقی وارد خاک ایران شده‌اند.",
 
 choices:[
@@ -28,6 +29,7 @@ popularity:1
 
 {
 title:"خرمشهر در خطر است",
+map:"map2.png",
 text:"نیروهای عراقی به خرمشهر نزدیک شده‌اند.",
 
 choices:[
@@ -110,6 +112,9 @@ popularity;
 }
 
 function loadEvent(){
+
+document.getElementById("map").src =
+events[currentEvent].map;
 
 document.getElementById("event").innerHTML =
 
